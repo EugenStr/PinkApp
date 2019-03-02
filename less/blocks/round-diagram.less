@@ -1,0 +1,94 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+
+
+	.round-diagram {
+		display: none;
+	}
+
+
+
+	@media @tablet {
+		.round-diagram {
+		.container();
+		display: flex;
+		background-color: white;
+		padding-bottom: 65px;
+		}
+
+		.round-diagram__img {
+			margin-top: 60px;
+			margin-left: 40px;
+			margin-right: 70px;
+		}
+
+		.round-diagram__text {
+			margin-top: 100px;
+			
+			& h2 {
+				font-size: 30px;
+				font-weight: bold;
+				width: 180px;
+				line-height: 1.3em;
+				margin-bottom: 15px;
+
+			}
+
+			& p {
+				font-size: 14px;
+				width: 296px;
+				margin-bottom: 10px;
+			}
+
+			& a {
+				font-size: 14px;
+				&:link {
+					color: #de3a67;
+				}
+				&:visited {
+					color: #d22856;
+				}
+			}
+		}
+	}
+
+
+
+
+	@media @desktop {
+		.round-diagram {
+			background-color: #f2f2f2;
+		}
+		.round-diagram__img {
+			margin-top: 40px;
+			margin-left: 150px;
+			margin-right: 70px;
+		}
+
+		.round-diagram__text {
+			margin-top: 100px;
+			
+			& h2 {
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 1.3em;
+				width: 530px;
+				margin-bottom: 25px;
+
+			}
+
+			& p {
+				font-size: 18px;
+				width: 530px;
+				margin-bottom: 20px;
+			}
+
+			& a {
+				font-size: 18px;
+		}
+}	
+}

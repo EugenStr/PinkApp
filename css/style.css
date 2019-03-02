@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #6d6f7a;  
+}
+
+.page-header  {
+  background: url(../img/iphone-5-in-hand-png.png) no-repeat center top / cover;
+  -webkit-background-size: 320px;
+       -o-background-size: 320px;
+          background-size: 320px;
+  min-height: 460px;
+}
+
+
+
+@media (min-width: 700px) {
+	.page-header {
+		background: url(../img/iphone-copy.png) no-repeat center top / cover;
+  		-webkit-background-size: 700px;
+       		-o-background-size: 700px;
+        	background-size: 700px;
+  		min-height: 730px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.page-header {
+		background: url(../img/iphone-6.png) no-repeat center top / cover;
+  		-webkit-background-size: 1200px;
+       		-o-background-size: 1200px;
+        	background-size: 1200px;
+  		min-height: 730px;
+	}
+}
+
+
+
+  .shape-background {
+    background: url(../img/Shape2.png) no-repeat center top / cover;
+  -webkit-background-size: 320px;
+       -o-background-size: 320px;
+          background-size: 320px;
+  }
+
+  @media (min-width: 700px) {
+  .shape-background {
+    background: url(../img/Shape3.png) no-repeat center top / cover;
+      -webkit-background-size: 700px;
+          -o-background-size: 700px;
+          background-size: 700px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .shape-background {
+    background: url(../img/Shape4.png) no-repeat center top / cover;
+      -webkit-background-size: 1200px;
+          -o-background-size: 1200px;
+          background-size: 1200px;
+  }
+}
+
+
+.shape-background2 {
+  background: url(../img/Shape2cprice.png) no-repeat center top / cover;
+  -webkit-background-size: 320px;
+       -o-background-size: 320px;
+          background-size: 320px;
+      min-height: 500px;
+}
+
+
+@media (min-width: 700px) {
+  .shape-background2 {
+    background: url(../img/Shape3copy.png) no-repeat center top / cover;
+      -webkit-background-size: 700px;
+          -o-background-size: 700px;
+          background-size: 700px;
+          min-height: 400px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .shape-background2  {
+    background: url(../img/Shape4.png) no-repeat center top / cover;
+      -webkit-background-size: 1200px;
+          -o-background-size: 1200px;
+          background-size: 1200px;
+  }
+}
+
+
+.map-background {
+  background: url(../img/map-background.png) no-repeat center top / cover;
+  -webkit-background-size: 320px;
+       -o-background-size: 320px;
+          background-size: 320px;
+      min-height: 610px;
+}
+
+@media (min-width: 700px) {
+    .map-background {
+    background: url(../img/map-background-tablet.png) no-repeat center top / cover;
+      -webkit-background-size: 700px;
+          -o-background-size: 700px;
+          background-size: 700px;
+          min-height: 780px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .map-background  {
+    background: url(../img/map-background-desktop.png) no-repeat center top / cover;
+      -webkit-background-size: 1200px;
+          -o-background-size: 1200px;
+          background-size: 1200px;
+  }
+}

@@ -1,0 +1,26 @@
+	@import "var.less";
+	
+.container() {
+	width: 320px;
+	margin: 0 auto;
+
+	@media @tablet {
+	  width: 700px;
+	}
+
+	@media @desktop {
+	  width: 1200px;
+	}
+}
+
+
+.no-outline() {
+	outline: none;
+	background: transform;
+
+	&::before {
+		display: none;
+	}
+}
+
+

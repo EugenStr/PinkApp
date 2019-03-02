@@ -1,0 +1,229 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+	.price-for-app {
+		margin: 0;
+		padding: 0;
+		.container();
+		background: white;
+		overflow: hidden;
+	}
+	.option__name-and-price {
+		font-size: 18px;
+		background: #283645;
+		text-transform: uppercase;
+		height: 75px;
+		padding-top: 25px;
+		font-weight: bold;
+		& span {
+			font-weight: 100;
+			font-size: 23px;
+		}
+	}
+
+	.app-purchase-option {
+		position: absolute;
+		background: white;
+		border-collapse: collapse;
+		font-size: 14px;
+		width: 279px;
+		text-transform: uppercase;
+		margin: 0 auto;
+		text-align: left;
+			
+		& td {
+		padding-left: 25px;
+		vertical-align: middle;
+	}
+
+		& tr {
+			border-bottom: 2px solid #e5e5e5;
+			border-right: 2px solid #e5e5e5;
+			border-left: 2px solid #e5e5e5;
+			font-size: 14px;
+			color: black;
+			height: 60px;
+			& img {
+				text-align: center;
+				&:last-child {
+					margin-bottom: -5px;
+				}
+			}
+		}
+	}
+	
+	
+
+	.app-purchase-options {
+		position: relative;
+		display: flex;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		z-index: 20;
+	}
+
+	.base-variant {
+		top: 110;
+		left: -260;
+	}
+
+
+
+	.standart-variant {
+		top: 110;
+		left: 20;
+	}
+
+
+	.unlim-variant {
+		top: 110;
+		left: 300;
+	}
+
+	.options-toggle {
+		margin: 0 auto;
+		display: flex;
+		& div {
+			width: 15px;
+			height: 15px;
+			margin-right: 19px;
+		}
+		margin-left: 120px;
+		margin-top: 440px;
+		padding-bottom: 0px;
+	}
+
+	.toggle__item {
+			padding: 0;
+			margin: 0;
+			width: 6px;
+			height: 6px;
+			-webkit-border-radius: 25px;
+			        border-radius: 25px;
+			border: none;
+			background: #b5b9be;
+			&:hover {
+				background: #7e868f;
+			}
+
+			&:active {
+				background: #E9EBEC;
+			}
+		}
+
+	.toggle__item-active {
+		background: white;
+		border: 2.5px solid #283645;
+		width: 10px;
+		height: 10px;
+		
+		&:hover {
+			background: none;
+		}
+	}
+
+
+	.option__name-and-price--relative {
+		position: relative;
+	}
+
+	.hit-absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+	}
+
+
+	.app-purchase-options--tablet--desktop {
+		display: none;
+	}
+
+
+	@media @tablet {
+		.app-purchase-option {
+			display: none;
+		}
+
+		.options-toggle {
+			display: none;
+		}
+		
+		.app-purchase-options--tablet--desktop {
+		display: block;
+	}
+
+
+		.app-purchase-options--tablet--desktop {
+			margin: 0 auto;
+			margin-top: 130px;
+			& tr {
+				color: black;			
+				& th {
+					text-transform: uppercase;
+					vertical-align: middle;
+					background: #283645;
+					width: 154px;
+					height: 80px;
+					color: white;
+					font-weight: bold;
+					font-size: 16px;
+					border-right: 2px solid #e5e5e5;
+					position: relative;
+					
+					& span {
+						font-size: 18px;
+						font-weight: 100;
+					}
+				}
+
+				& td {
+					font-size: 14px;
+					background: white;
+					border: 2px solid #e5e5e5;
+					text-align: center;
+					vertical-align: middle;
+					height: 47px;
+				}
+			}
+		}
+
+		.hit__tablet {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+
+
+
+
+		@media @desktop {
+			.app-purchase-options--tablet--desktop {
+				margin: 0 auto;
+				margin-top: 160px;
+				margin-bottom: 80px;
+				& tr {		
+					& th {
+						width: 233px;
+						height: 100px;
+						font-size: 18px;
+						& span {
+							font-size: 24px;
+						}
+					}
+
+					& td {
+						font-size: 18px;
+						height: 61px;
+					}
+				}
+		}
+		}
+
+

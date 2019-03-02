@@ -1,1 +1,266 @@
 
+:<!DOCTYPE html>
+<html>
+<head>
+	<title>Магазин игрушек Mishka</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- Шапка с меню -->
+	<header class="page-header">
+	<div class="main-header">
+		<nav class="main_nav main-nav--closed" id="main-nav">
+			<div class="page-header__logo">
+			<picture>
+				<source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg.png">
+				<source media="(min-width:700px)"srcset="img/logotype-white-tablet.svg.png">
+				<img src="img/logotype-white-mobile.svg.png" alt="">
+			</picture>
+			<button class="main-nav__toggle" id="toggle">Открыть меню</button>
+			</div>
+			
+			<div class="main-nav__wrapper">
+				<div class="main-nav__absolute">
+					<ul class="main-nav__items">	
+						<li class="main-nav__item main-nav__main"><a href="#">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фотография</a></li>
+						<li class="main-nav__item"><a href="#">Конкурс</a></li>
+						<li class="main-nav__item"><a href="#">HTML academy</a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="main-intro__wrapper">
+		<section class="main-intro">
+			<h1>Взгляните на жизнь иначе!</h1>
+			<a href="#playmarket" class="main-intro__download">
+				Скачать приложение
+			</a>
+			<div class="main-intro__os">
+				<img src="img/apple-logo.svg.png" alt="apple-logo" >
+				<img src="img/android-logo.svg.png" alt="android-logo">
+				<img src="img/microsoft-logo.svg.png" alt="windows-logo">
+			</div>
+
+			<p class="main-intro__sr">
+				Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+			</p>
+		</section>
+	</div>
+	</header>
+	<!-- Основной блок сайта -->
+	<main class="page-main">
+		<!-- Информация об устройстве -->
+		<section class="info-about-app">
+			<div class="slogan">
+				<h2>
+					Устали от серости мегаполиса?
+				</h2>
+				<h2>
+					Нам есть, что вам 
+					предложить!
+				</h2>
+			</div>
+			<div class="shape-background">
+				<section class="application-features">
+					<div class="application-features__item">
+						<h3>
+							Поднимает настроение
+						</h3>
+						<p>
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+						</p>
+					</div>
+					<div class="application-features__item">
+						<h3>
+							Меняет мир вокруг
+						</h3>
+						<p>
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
+					</div>
+					<div class="application-features__item">
+						<h3>
+							Заводит новых друзей
+						</h3>
+						<p>
+							Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+						</p>
+					</div>
+				</section>
+				<div class="phone-with-img">
+					<picture>
+						<source media="(min-width:1200px)" srcset="img/3phone.png">
+						<source media="(min-width:700px)"srcset="img/Iphonescreen4.png">		
+						<img src="img/iphonescreen3.png" alt="">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<!-- Статистика и прочее(только для tablet и desktop) -->
+		<article class="round-diagram">
+			<img src="img/clock24.png" alt="clock" class="round-diagram__img">
+			<div class="round-diagram__text">
+				<h2>
+					Эффект на 24 часа!
+				</h2>
+				<p>
+					Британские ученые провели исследования
+					и доказали, что положительный эффект
+					от использования приложения длится 
+					целые сутки!
+				</p>
+				<a href="#">
+					Узнать больше об исследовании
+				</a>
+			</div>
+		</article>
+		<!-- Комментарии к приложению -->
+		<section class="review">
+			<article class="review__content">
+				<header class="review__user">
+					<p class="review__user-name">Николай Петров</p>
+					<p class="age-job">25 лет, водитель трамвая</p>
+				</header>
+				<div>
+					<p class="review__comment">
+					«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+					</p>
+				</div>
+				
+			</article>
+			<img src="img/quotes.svg.png" alt="" class="review__quotes-desktop" width="79px" height="63px">
+			<!-- Туглер -->
+			<div class="review-toggle">
+				<div>	
+				<button class="review-toggle__item review-toggle__item-active">
+				</button>
+				</div>
+				<div>	
+				<button class="review-toggle__item">	
+				</button>
+				</div>
+				<div>	
+				<button class="review-toggle__item">
+				</button>
+				</div>
+			</div>
+			<button class="review-toggle__arrows--deskonly review-toggle__leftarrow"><img src="img/left-arrow.svg.png" alt=""></button>
+			<button class="review-toggle__arrows--deskonly review-toggle__rightarrow"><img src="img/right-arrow.svg.png" alt=""></button>
+		</section>
+		<!-- Цены за разные версии приложения -->
+		<section class="price-for-app">
+			<div class="shape-background2">
+				<div class="app-purchase-options">
+						<!-- Таблица бля 320Px -->
+						<table class="app-purchase-option base-variant">
+							<caption class="option__name-and-price">База <br> <span>1,99 USD</span></caption>
+							<tr><td>разовый фильтр</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+							<tr><td>смайлики</td><td><img src="img/no.svg.png" alt=""></td></tr>
+							<tr><td>комментарии</td><td><img src="img/no.svg.png" alt=""></td></tr>
+						</table>
+						<table class="app-purchase-option standart-variant">
+							<caption class="option__name-and-price option__name-and-price--relative"><img src="img/hit.png" alt="" class="hit-absolute">стандарт <br> <span>3,99 USD</span></caption>
+							<tr><td>разовый фильтр</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+							<tr><td>смайлики</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+							<tr><td>комментарии</td><td><img src="img/no.svg.png" alt=""></td></tr>
+						</table>
+						<table class="app-purchase-option unlim-variant">
+							<caption class="option__name-and-price">анлим <br> <span>9,99 USD</span></caption>
+							<tr><td>разовый фильтр</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+							<tr><td>смайлики</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+							<tr><td>комментарии</td><td><img src="img/yes.svg.png" alt=""></td></tr>
+						</table>
+						<!-- Таблица бля 700px и 1200px-->
+					<table class="app-purchase-options--tablet--desktop">
+							<tr>
+							<th style="background: none; border-right: none">
+							</th>
+							<th>База <br> <span>1,99 USD</span></th>
+							<th>
+							 <picture>
+								<source media="(min-width:1200px)" srcset="img/hitdesktop.png">		
+								<img src="img/hittablete.png" alt="" class="hit__tablet">
+							</picture>
+								стандарт <br> <span>3,99 USD</span>
+							</th>
+							<th style="border-right: none">анлим <br> <span>9,99 USD</span></th>
+							</tr>
+							<tr>
+							<td style="text-align: left; padding-left: 20px;">Розовый фильтр</td><td style="border-top: none"><img src="img/yes.svg.png" alt=""></td><td style="border-top: none;"><img src="img/yes.svg.png" alt=""></td><td style="border-top: none;"><img src="img/yes.svg.png" alt=""></td>
+							</tr>
+							<tr>
+							<td style="text-align: left; padding-left: 20px;">Смайлики</td><td><img src="img/no.svg.png" alt=""></td><td><img src="img/yes.svg.png" alt=""></td><td><img src="img/yes.svg.png" alt=""></td>
+							</tr>
+							<tr>
+							<td style="text-align: left; padding-left: 20px;">Комментарии</td><td><img src="img/no.svg.png" alt=""></td><td><img src="img/no.svg.png" alt=""></td><td><img src="img/yes.svg.png" alt=""></td>			
+						</tr>
+					</table>	
+				</div>
+				<div class="options-toggle">
+					<div>	
+					<button class="toggle__item">
+					</button>
+					</div>
+					<div>	
+					<button class="toggle__item  toggle__item-active">	
+					</button>
+					</div>
+					<div>	
+					<button class="toggle__item">
+					</button>
+					</div>
+				</div>
+					
+			</div>
+		</section>
+		<!-- Контактная информация и footer основного блока -->
+		<footer class="page-main-footer">
+			<div class="map-background">
+				<section class="contact-info">
+						<p class="contact-info__contact-us">Остались вопросы?<br>Свяжитесь с нами!</p>
+						<div class="contact-info__items">
+							<div class="contact-info__item">
+								<p class="contact-info__call contact-info--bold">Звоните</p>
+								<p class="contact-info__number-phone contact-info--red">+7(812)555-66-66</p>	
+							</div>
+							<div class="contact-info__item">
+								<p class="contact-info__write contact-info--bold">Пишите</p>
+								<p class="contact-info__mail contact-info--red">mail@htmllacademy.ru</p>
+							</div>
+							<div class="contact-info__item">
+								<p class="contact-info__come-to-us contact-info--bold">Приезжайте в гости</p>
+								<p class="contact-info__adress contact-info--red">ул.Большая <br> Конюшенная, 19/8</p>
+							</div>
+						</div>
+				</section>
+			</div>
+		</footer>
+	</main>
+	<!-- Футер сайта (только десктоп и tablet) -->
+	<footer class="page-footer">
+			<picture>
+				<source media="(min-width:1200px)" srcset="img/logotype-blue-desktop.svg.png">		
+				<img src="img/logotype-blue-tablet.svg.png" alt="">
+			</picture>
+			<section class="page-footer__social">
+				<a href="#"><img src="img/twitter.svg.png" alt=""></a>
+				<a href="#"><img src="img/facebook.svg.png" alt=""></a>
+				<a href="#"><img src="img/youtube.svg.png" alt="" style="padding-left: 3px"></a>
+			</section>
+			<p class="page-footer__htmlacademy">Разработано <img src="img/htmlacademy.svg.png" alt=""></p>
+
+	</footer>
+	<script type="text/javascript" src="main-nav.js">
+
+	</script>
+	<script type="text/javascript" src="toggles.js">
+
+	</script>
+
+</body>
+</html>

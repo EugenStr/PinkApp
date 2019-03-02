@@ -1,0 +1,77 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+
+	.page-main-footer {
+		.container();
+		color: black;
+		text-align: center;
+	}
+
+
+
+	.contact-info__contact-us {
+		font-size: 24px;
+		font-weight: 100;
+		padding-top: 48px;
+	}
+
+	.contact-info--bold {
+		font-size: 18px;
+		font-weight: bold;
+		padding-top: 38px;
+	}
+
+	.contact-info--red {
+		font-size: 24px;
+		color: #d22856;
+		font-weight: 100;
+	}
+	
+	.contact-info__mail {
+		&:hover {
+			color: black;
+			text-decoration: underline;
+		}
+
+		&:active {
+			opacity: 0.3;
+			text-decoration: none;
+		}
+	}
+
+	@media @tablet {
+		.contact-info__contact-us {
+		font-size: 40px;
+		padding-top: 55px;
+		line-height: 1.3em;
+		}
+
+		.contact-info__items {
+			display: flex;
+			-webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+			    width: 570px;
+			    margin: 0 auto;
+		}
+	}
+
+
+	@media @desktop {
+		.contact-info__items {
+			width: 960px;
+		}
+
+		.contact-info__contact-us {
+		font-size: 50px;
+		}
+	}
