@@ -1,0 +1,169 @@
+
+:<!DOCTYPE html>
+<html>
+<head>
+	<title>Конкурс "Путешествие с Pink"</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- Шапка с меню -->
+	<header class="page-header">
+	<div class="main-header">
+
+		<nav class="main_nav main-nav--closed" id="main-nav">
+			<div class="page-header__logo">
+			<picture>
+				<source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg.png">
+				<source media="(min-width:700px)"srcset="img/logotype-white-tablet.svg.png">
+				<img src="img/logotype-white-mobile.svg.png" alt="">
+			</picture>
+			<button class="main-nav__toggle" id="toggle">Открыть меню</button>
+			</div>
+			
+			<div class="main-nav__wrapper">
+				<div class="main-nav__absolute">
+					<ul class="main-nav__items">	
+						<li class="main-nav__item main-nav__main"><a href="../index.html">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фотография</a></li>
+						<li class="main-nav__item"><a href="Конкурс/competition.html">Конкурс</a></li>
+						<li class="main-nav__item"><a href="#">HTML academy</a></li>
+					
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="competition-slogan">
+		<section class="main-intro">
+			<h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+		</section>
+		
+	</div>
+	</header>
+	<main class="main-field-for-form">
+		<h1>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>
+			Пожалуйста, заполните форму ниже:
+		</span></h1>
+		<form action="#" method="post">
+			<section class="form__tablet-reverse">
+				<div class="form-desktop-flex">
+					<div class="form__FIO">
+						<label for="surname">Фамилия:</label>	
+						<input type="text" name="surname"  placeholder="Укажите фамилию" required> <br>
+						<label for="name">Имя:</label>
+						<input type="text" name="name"  placeholder="Введите ваше имя" required class="form_name"><br>
+						<label for="patronymic">Отчество:</label>
+						<input type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+					</div>
+				
+					<div class="form__radio-OS">
+						<p><a name="top"></a></p>
+							<p>С каким приложением путешествовали?</p>
+							<div>
+								<input type="radio" checked name="OS" value="iOS">
+								<label for="iOS">Pink для iOS </label>
+							</div>
+							<div>
+								<input type="radio" name="OS" value="Android">
+								<label for="Android">Pink на Android </label>
+							</div>
+							<div>
+								<input type="radio"  name="OS" value="Windows Phone">
+								<label for="windows">Windows Phone</label>
+							</div>
+					</div>
+				</div>
+				<div class="form__phone-and-email">
+					<p>Контактная информация</p>
+					<div>
+					<label for="phone">Номер телефона</label>
+					<input type="text" name="phone"  placeholder="+7 XXX XXX-XX-XX" required>
+					<img src="img/phone.svg.png" alt="">
+					</div>
+					<div>
+					<label for="mail">Адрес почты</label>	
+					<input type="text" name="mail"  placeholder="Введите почту" required>
+					<img src="img/mail.svg.png" alt="">
+					</div>
+				</div>
+				<div class="form__achivments">
+					<p>ваши безбашенные достижения в путешествии</p>
+					<!-- селфи с акулой -->
+					<div>
+						<input type="checkbox" name="shark" checked>
+						<label for="shark">Сделал селфи с акулой</label>
+					</div>
+					<!-- обгорел на пляже -->
+					<div>
+						<input type="checkbox" name="sunburned" checked>
+						<label for="sunburned">Обгорел на пляже</label><br>
+					</div>
+					<!-- видел чака нориса -->
+					<div>
+						<input type="checkbox" name="Chuck">
+						<label for="Chuck">Видел Чака Норриса</label><br>
+					</div>
+					<!-- накупил сувениров -->
+					<div>
+						<input type="checkbox" name="souvenirs">
+						<label for="souvenirs">Накупил сувениров</label><br>
+					</div>
+					<!-- Удержал башню -->
+					<div>
+						<input type="checkbox" name="tower" checked>
+						<label for="tower">Удержал башню</label><br>
+					</div>
+					<!-- разгромил отель -->
+					<div>
+						<input type="checkbox" name="hotel">
+						<label for="hotel">Разгромил отель</label>
+					</div>
+				</div>
+			</section>
+			<div class="form__comment-submit">
+				<p>Опишите свои эмоции</p>
+				<textarea name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+			</div>
+			<div class="form__submit">
+				<a href="#top"><input type="button" name="submit" id="submit" value="Отправить форму" class="js-button-campaign"></a>
+				<p class="form__required-field"><span>*</span> — обязательные поля</p>
+			</div>
+		</form>
+	</main>
+	<!-- Футер сайта (только десктоп и tablet) -->
+	<footer class="page-footer">
+			<picture>
+				<source media="(min-width:1200px)" srcset="img/logotype-blue-desktop.svg.png">		
+				<img src="img/logotype-blue-tablet.svg.png" alt="">
+			</picture>
+			<section class="page-footer__social">
+				<a href="#"><img src="img/twitter.svg.png" alt=""></a>
+				<a href="#"><img src="img/facebook.svg.png" alt=""></a>
+				<a href="#"><img src="img/youtube.svg.png" alt="" style="padding-left: 3px"></a>
+			</section>
+			<p class="page-footer__htmlacademy">Разработано <img src="img/htmlacademy.svg.png" alt=""></p>
+
+	</footer>
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<div class="popup__text">
+				<h2>Ваша заявка	отправлена</h2>
+				<p>Спасибо за  ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+			</div>
+			<div class="popup__button">
+				<button class="js-close"> Закрыть окно</button>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../main-nav.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src="popup.js">
+		
+	</script>
+</body>
+</html>

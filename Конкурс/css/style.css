@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #6d6f7a;  
+}
+
+.page-header  {
+  background: url(../img/back-mobile-comp.png) no-repeat center top / cover;
+  -webkit-background-size: 320px;
+       -o-background-size: 320px;
+          background-size: 320px;
+    min-height: 237px;
+}
+
+
+@media (min-width: 700px) {
+	.page-header {
+		background: url(../img/back-tablet@1x.png) no-repeat center top / cover;
+  		-webkit-background-size: 700px;
+       		-o-background-size: 700px;
+        	background-size: 700px;
+  		min-height: 440px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.page-header {
+		background: url(../img/back-desktop.png) no-repeat center top / cover;
+  		-webkit-background-size: 1200px;
+       		-o-background-size: 1200px;
+        	background-size: 1200px;
+  		min-height: 395px;
+	}
+}
+
+
+
+  

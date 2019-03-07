@@ -1,0 +1,579 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+	.main-field-for-form {
+		.container();
+		& h1 {
+			font-size: 14px;
+			font-weight: normal;
+			width: 275px;
+			text-align: center;
+			margin: 0 auto;
+			padding-top: 55px;
+			padding-bottom: 50px;
+			
+			
+			& span {
+				display: none;
+			}
+		}
+		background: #FFF;
+		color: black;
+	}
+
+	input[type="text"] {
+			border: 2px solid #e5e5e5;
+			width: 280px;
+			height: 63px;
+			margin-top: 5px;
+			padding-left: 20px;
+			font-size: 18px;
+			margin-bottom: 20px;
+			&::placeholder {
+				font-size: 18px;
+				color: black;				
+			}
+			
+
+
+		}
+
+		
+			input:focus {
+				outline: none;
+				background: none;
+				border: 2px solid #d22856;
+				&:hover {
+					border: 2px solid #d22856;
+				}
+			}
+
+			input:checked {
+				outline: none;
+				background: none;
+			}
+
+			input:hover {
+				border: 2px solid black;
+			}
+
+			&:avtive {
+				border: 2px solid #d22856;
+			}
+	
+	.form__FIO {
+		width: 282px;
+		margin: 0 auto;
+		& label {
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #db3360;
+			padding-left: 20px;
+		}
+
+	
+		}
+
+		.form-desktop-flex {
+				-webkit-order: 1;
+		    -ms-order: 1;
+		        order: 1;
+		}
+		
+	.form__achivments {
+		background: white;
+		
+		& label {
+			font-size: 18px;
+			padding-left: 20px;
+
+		}
+
+		& input {
+			width: 39px;
+			height: 39px;
+			margin-left: 20px;
+			vertical-align: middle;
+			}
+		
+		& div {
+			margin-top: 40px;
+			
+			&:last-child {
+				padding-bottom: 50px;
+			}
+		}
+	}
+
+
+	.form__phone-and-email {
+		background: #f2f2f2;
+		width: 320px;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		& div {
+			width: 282px;
+			margin: 0 auto;
+		}
+		& label {
+			text-transform: uppercase;
+			font-size: 14px;
+			color: #db3360;
+			padding-left: 20px;
+			font-weight: normal;
+		}
+
+		& p {
+			display: none;
+		}
+
+		& img {
+			display: none;
+		}
+	}
+
+
+	.form__radio-OS {
+		background: #f2f2f2;
+		
+		& label {
+			font-size: 18px;
+			padding-left: 20px;
+
+		}
+
+		& input {
+			width: 39px;
+			height: 39px;
+			margin-left: 20px;
+			vertical-align: middle;
+			}
+		
+		& div {
+			margin-top: 40px;
+			
+			&:last-child {
+				padding-bottom: 50px;
+			}
+		}
+	}
+
+
+	.main-field-for-form p {
+			font-size: 14px;
+			font-weight: normal;
+			width: 220px;
+			text-align: center;
+			margin: 0 auto;
+			color: #db3360;
+			text-transform: uppercase;
+			padding-top: 35px;
+		}
+
+	.form__comment-submit {
+
+		& p {
+			padding-top: 60px;
+			
+		}
+
+
+
+		& textarea {
+			width: 280px;
+			height: 200px;
+			padding: 18px;
+			margin-left: 20px;
+			margin-top: 10px;
+			border: 2px solid #e5e5e5;
+			font-size: 18px;
+			color: black;
+			resize: none;
+			
+			&::placeholder {
+				font-size: 18px;
+				color: black;
+				font-weight: normal;
+			}
+			&:focus {
+				outline: none;
+				background: none;
+			}
+			}
+		}
+
+
+			input[type="button"] {
+				width: 280px;
+				height: 63px;
+				background: #2aab6d;
+				border: none;
+				-webkit-border-radius: 2px;
+				        border-radius: 2px;
+				margin: 0 auto;
+				margin: 47px 20px 0px 20px;
+				text-transform: uppercase;
+				color: white;
+				font-size: 18px;
+				
+				&:hover {
+					background: #1c9b5e;
+					border: none;
+				}
+
+				&:active {
+					color: #61B98F;
+				}
+				
+			}
+			
+			.form__required-field {
+				color: black;
+				padding: 0;
+				
+				& span {
+					color: #db3360;
+				}
+			}
+
+			.form__tablet-reverse {
+				display: flex;
+				-webkit-flex-direction: column-reverse;
+				    -ms-flex-direction: column-reverse;
+				        flex-direction: column-reverse;
+			}
+
+
+
+
+	@media @tablet {
+		.main-field-for-form {
+		& h1 {
+			font-size: 18px;
+			width: 494px;
+			& span {
+				display: block;
+			}
+		}
+		}	
+
+
+		.form__FIO {
+		width: 620px;
+		margin: 0 auto;
+		& label {
+			padding: 0;
+			padding-right: 20px;
+		}
+		& input:nth-child(odd) {
+			width: 550px;
+		}
+		}
+		
+
+		input[type="text"] {
+			width: 510px;
+			height: 63px;
+			margin: 0;
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		
+
+		.main-field-for-form p {
+			width: 365px;
+			padding: 0;
+			margin-top: 30px;
+			background: #FFF;
+			position: absolute;
+				top: -44;
+				left: 126;
+		}
+
+		.form__radio-OS {
+			width: 620px;
+			margin: 0 auto;
+			position: relative;
+			background: white;
+			border: 2px solid #e5e5e5;
+			margin-bottom: 60px;
+			margin-top: 20px;
+			& input {
+				margin-left: 60px;
+			}
+		}
+
+		.form__phone-and-email {
+			background: #FFF;
+		width: 620px;
+		margin: 0 auto;
+		border: 2px solid #e5e5e5;
+		position: relative;
+		padding: 0;
+		padding-top: 30px;
+		
+		& div {
+			width: auto;
+			margin: 0;
+		}
+
+		& img {
+			position: absolute;
+			display: block;
+			right: 62;
+			margin-top: -32px;
+			
+		}
+
+		& p {
+			display: block;
+			width: 258px;
+			left: 180;
+		}
+
+		& input {
+			margin-left: 58px;
+			margin-bottom: 5px;
+			width: 440px;
+			height: 60px;
+		}
+		
+		& label {
+			padding-left: 76px;
+			margin-bottom: 0;
+		}
+
+
+		& div {
+			display: flex;
+			-webkit-flex-direction: column-reverse;
+			    -ms-flex-direction: column-reverse;
+			        flex-direction: column-reverse;
+			    margin-top: 10px;
+			    margin-bottom: 25px;
+		}
+		margin-bottom: 60px;
+	}
+
+		.form__achivments {
+		background: white;
+		width: 620px;
+		margin: 0 auto;
+		border: 2px solid #e5e5e5;
+		position: relative;
+		margin-bottom: 60px;
+
+		& p {
+			width: 460px;
+			left: 90;
+		}
+
+		& input {
+			margin-left: 60px;
+			}
+		}
+
+
+		.form__comment-submit {
+		background: white;
+		width: 620px;
+		margin: 0 auto;
+		border: 2px solid #e5e5e5;
+		position: relative;
+		& p {
+			width: 258px;
+			left: 180;
+		}
+		& textarea {
+			width: 500px;
+			height: 193px;
+			border: 2px solid #e5e5e5;
+			margin: 44px 58px 44px 58px;
+			&::placeholder {
+				font-size: 17px;
+			}
+			}
+		}
+			
+
+		.form__submit {
+			position: relative;
+			display: flex;
+			-webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			& input[type="button"] {
+				width: 300px;
+				margin: 68px 40px;
+			}
+			
+			& p {
+				position: static;
+				text-align: right;
+				margin-right: 40px;
+				margin-top: 90px;
+			}
+			.form__required-field {
+				color: black;
+				padding: 0;
+
+				& span {
+					color: #db3360;
+				}
+			}
+		}
+
+		.form__tablet-reverse {
+			display: block;
+		}		
+
+}
+
+
+
+	@media @desktop {
+		.main-field-for-form {
+			& h1 {
+				width: 760px;
+				
+				& span {
+				display: inline;
+			}
+			}
+
+			& form {
+				width: 940px;
+				margin: 0 auto;
+			}
+		}
+
+		.form__FIO {
+		width: 450px;
+		margin: 0;
+		
+		& input {
+			margin-bottom: 60px;
+		}
+		& input:nth-child(odd) {
+			width: 380px;
+		}
+		}
+		
+
+		input[type="text"] {
+			width: 340px;
+		}
+
+		.form__radio-OS {
+			width: 435px;
+			margin: 0;
+			max-height: 300px;
+			& p {
+				left: 34;
+			}
+		}
+
+		.form__phone-and-email {
+		width: 940px;
+		margin: 0 auto;
+
+		display: flex;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		
+		& p {
+			left: 340px;
+		}
+
+		& img {
+			top: 32;
+			right: 0;
+		}
+		& div {
+			padding-right: 60px;
+			position: relative;			    
+		}
+	}
+		
+		.form__achivments {
+		background: white;
+		width: 940px;
+		margin: 0 auto;
+		
+		display: flex;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-justify-content: space-around;
+		        justify-content: space-around;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-align-items: flex-start;
+		        align-items: flex-start;
+		-webkit-align-content: flex-start;
+		        align-content: flex-start;
+		margin-top: 60px;
+		margin-bottom: 40px;
+		
+		& div {
+			width: 265px;
+		}
+		& p {
+			width: 460px;
+			left: 254;
+		}
+
+		& input {
+			margin: 0;
+		}
+	}	
+		
+		.form__comment-submit {
+		width: 940px;
+		margin: 0 auto;
+		& p {
+			width: 258px;
+			left: 340;
+		}
+		& textarea {
+			width: 820px;
+			height: 126px;
+			}
+		}
+
+		.form__submit {
+			width: 940px;
+		margin: 0 auto;
+			& input[type="button"] {
+				width: 300px;
+				margin: 68px 0px;
+			}
+			
+			& p {
+				position: static;
+				text-align: right;
+				margin-right: 0px;
+				margin-top: 90px;
+			}
+		}
+		
+		.form-tablet-reverse {
+			width: 940px;
+			margin: 0;
+		}
+		.form-desktop-flex {
+			display: flex;
+			-webkit-flex-direction: row-reverse;
+			    -ms-flex-direction: row-reverse;
+			        flex-direction: row-reverse;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+		}	
+
+	}

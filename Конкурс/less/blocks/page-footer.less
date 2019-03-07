@@ -1,0 +1,72 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+	.page-footer {
+		display: none;
+	}
+
+
+
+	@media @tablet {
+		.page-footer {
+			.container();
+			display: flex;
+			min-height: 126px;
+			background: white;
+			-webkit-flex-direction: row;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-justify-content: space-around;
+			        justify-content: space-around;
+			
+			& picture {
+				margin-top: 36px;
+			}
+
+
+			& p {
+				color: black;
+				margin-top: 42px;
+				& img {
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.page-footer__social {
+			width: 200px;
+					margin-top: 50px;
+					margin-left: 20px;
+			& a {
+
+				padding: 10px 13px;
+				border: 3px solid #e5e5e5;
+				-webkit-border-radius: 25px;
+				        border-radius: 25px;
+				&:nth-child(2) {
+					padding: 10px 1em;
+				}
+
+				&:last-child {
+					padding: 10px 13px;
+				}
+
+				&:hover {
+					border: 3px solid #283645;
+				}
+
+				&:active {
+					opacity: 0.3;
+					border: 3px solid #e5e5e5;
+				}
+			}
+		}
+
+
+
+
+	}
+	

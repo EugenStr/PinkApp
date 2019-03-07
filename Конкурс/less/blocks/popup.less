@@ -1,0 +1,61 @@
+	@import "var.less";
+	@import "mixins.less";
+	@import "reset.less";
+	@import "scaff.less";
+	
+
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+
+	.popup {
+		position: absolute;
+		
+		width: 320px;
+		left: 50%;
+		top: 820px;
+		transform: translate(-50%, 0);
+		text-align: center;
+		
+		& .popup__text {
+			background: #FFF;
+			height: 180px;
+			color: black;
+			
+			& h2 {
+				padding-top: 20px;
+				font-size: 18px;
+				padding-bottom: 20px;
+				font-weight: bold;
+			}
+
+			& p {
+				font-size: 14px;
+			}
+		}
+
+		& .popup__button {
+			background: #f2f2f2;
+			height: 112px;
+			padding-top: 48px;
+			-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+			        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+			& button {
+				width: 280px;
+				height: 63px;
+				background: #2aab6d;
+				border: none;
+				-webkit-border-radius: 2px;
+				        border-radius: 2px;
+				font-size: 18px;
+				color: white;
+				text-transform: uppercase;
+				
+			}
+		}
+	}
