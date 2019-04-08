@@ -1,5 +1,4 @@
-
-:<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
 	<title>Конкурс "Путешествие с Pink"</title>
@@ -51,26 +50,26 @@
 				<div class="form-desktop-flex">
 					<div class="form__FIO">
 						<label for="surname">Фамилия:</label>	
-						<input type="text" name="surname"  placeholder="Укажите фамилию" required> <br>
+						<input type="text" name="surname"  placeholder="Укажите фамилию" required class="js_fio" id="surname"> <br>
 						<label for="name">Имя:</label>
-						<input type="text" name="name"  placeholder="Введите ваше имя" required class="form_name"><br>
+						<input type="text" name="name1"  placeholder="Введите ваше имя" required class="form_name js_fio" id="name"><br>
 						<label for="patronymic">Отчество:</label>
-						<input type="text" name="patronymic" placeholder="Ну и отчество тоже" required>
+						<input type="text" name="patronymic" placeholder="Ну и отчество тоже" class="js_fio" id="patronymic">
 					</div>
 				
 					<div class="form__radio-OS">
 						<p><a name="top"></a></p>
 							<p>С каким приложением путешествовали?</p>
 							<div>
-								<input type="radio" checked name="OS" value="iOS">
+								<input type="radio" name="OS" value="iOS" class="radioOS" checked>
 								<label for="iOS">Pink для iOS </label>
 							</div>
 							<div>
-								<input type="radio" name="OS" value="Android">
+								<input type="radio" name="OS" value="Android" class="radioOS">
 								<label for="Android">Pink на Android </label>
 							</div>
 							<div>
-								<input type="radio"  name="OS" value="Windows Phone">
+								<input type="radio"  name="OS" value="Windows Phone" class="radioOS">
 								<label for="windows">Windows Phone</label>
 							</div>
 					</div>
@@ -92,32 +91,32 @@
 					<p>ваши безбашенные достижения в путешествии</p>
 					<!-- селфи с акулой -->
 					<div>
-						<input type="checkbox" name="shark" checked>
+						<input type="checkbox" name="shark" checked value="Сделал селфи с акулой, " class="achivments_js">
 						<label for="shark">Сделал селфи с акулой</label>
 					</div>
 					<!-- обгорел на пляже -->
 					<div>
-						<input type="checkbox" name="sunburned" checked>
+						<input type="checkbox" name="sunburned" checked  value="Обгорел на пляже, " class="achivments_js">
 						<label for="sunburned">Обгорел на пляже</label><br>
 					</div>
 					<!-- видел чака нориса -->
 					<div>
-						<input type="checkbox" name="Chuck">
+						<input type="checkbox" name="Chuck" value="Видел Чака Норриса, " class="achivments_js">
 						<label for="Chuck">Видел Чака Норриса</label><br>
 					</div>
 					<!-- накупил сувениров -->
 					<div>
-						<input type="checkbox" name="souvenirs">
+						<input type="checkbox" name="souvenirs" value="Накупил сувениров, " class="achivments_js">
 						<label for="souvenirs">Накупил сувениров</label><br>
 					</div>
 					<!-- Удержал башню -->
 					<div>
-						<input type="checkbox" name="tower" checked>
+						<input type="checkbox" name="tower" checked value="Удержал башню, " class="achivments_js">
 						<label for="tower">Удержал башню</label><br>
 					</div>
 					<!-- разгромил отель -->
 					<div>
-						<input type="checkbox" name="hotel">
+						<input type="checkbox" name="hotel" value="Разгромил отель, " class="achivments_js">
 						<label for="hotel">Разгромил отель</label>
 					</div>
 				</div>
@@ -127,7 +126,7 @@
 				<textarea name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
 			</div>
 			<div class="form__submit">
-				<a href="#top"><input type="button" name="submit" id="submit" value="Отправить форму" class="js-button-campaign"></a>
+				<input type="button" name="submit" id="submit" value="Отправить форму" class="js-button-campaign" onclick="formSubmission()">
 				<p class="form__required-field"><span>*</span> — обязательные поля</p>
 			</div>
 		</form>

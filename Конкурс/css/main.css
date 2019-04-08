@@ -960,11 +960,18 @@ input[type="button"]:active {
   display: none;
 }
 .popup {
-  position: absolute;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  border: 2px solid #f2f2f2;
   width: 320px;
-  left: 50%;
-  top: 820px;
-  transform: translate(-50%, 0);
+  right: 50%;
+  top: -60%;
+  -webkit-transform: translateX(50%) translateY(50%);
+  -moz-transform: translateX(50%) translateY(50%);
+  -ms-transform: translateX(50%) translateY(50%);
+  -o-transform: translateX(50%) translateY(50%);
+  transform: translateX(50%) translateY(50%);
   text-align: center;
 }
 .popup .popup__text {
@@ -985,8 +992,6 @@ input[type="button"]:active {
   background: #f2f2f2;
   height: 112px;
   padding-top: 48px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .popup .popup__button button {
   width: 280px;
@@ -998,4 +1003,14 @@ input[type="button"]:active {
   font-size: 18px;
   color: white;
   text-transform: uppercase;
+}
+@media (min-width: 700px) {
+  .popup {
+    top: -25%;
+  }
+}
+@media (min-width: 1200px) {
+  .popup {
+    top: 0%;
+  }
 }
